@@ -1,0 +1,32 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+
+/* Write your CSS below, don't change the rules above. */
+
+/*tag selector*/
+p {
+  color: red;
+}
+
+/*Class note selector*/
+.note {
+  font-size: 20px;
+}
+
+/*ID selector*/
+#id-selector-demo{
+  color: green;
+}
+
+/*Tag with a specific attribute selector*/
+li[value="4"]{ /*remember the "" when setting the atribute value here*/
+  color:blue;
+}
+
+/*Universal selector*/
+*{
+  text-align: center
+}

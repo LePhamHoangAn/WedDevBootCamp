@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    /* Write your code here */
+    .red-circle{
+      position: absolute; 
+      /*Absolute or Relative, both works because there is only two div
+      tags relative to each other so there are multiple ways that is
+      working. Relative positioning doesn't required any ancestors
+      because it is only relative to a supposed location so basically
+      you just moved to the FORMER location. 
+      Red circle should be positioned absolute because it has the 
+      ancestor which is blue rectangle div so basically 
+      you just moved away from the FORMER TOP LEFT CORNER of the 
+      blue rectangle.*/
+      top:150px;
+      left:250px;
+      background-color: red;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%; /*Turn square into a circle*/
+    }
+
+
+    .blue-box{
+      position:relative;
+      top:200px;
+      left:200px;
+      background-color: blue;
+      width: 500px;
+      height: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="blue-box">
+    <div class="red-circle">
+    </div>
+  </div>
+
+</body>
+
+</html>

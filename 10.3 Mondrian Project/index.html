@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .container{
+      width: 748px;
+      height:748px;
+      display: grid;
+      grid-template-columns: 320px 9px 198px 9px 153px 9px 50px;
+      grid-template-rows: 414px 9px 130px 15px 155px 9px 20px;
+    }
+
+    body{
+      height: 100vh; 
+      display: flex;
+      align-items: center;     
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .red{
+      background-color: #E72F24;      
+    }
+
+    .blue{
+      background-color: #004592;
+    }
+
+    .yellow{
+      background-color: #F9D01E;
+    }
+
+    .black-box{
+      background-color: #232629;
+    }
+    .white{
+      background-color: #F0F1EC;
+    }
+
+    .first-white{
+      grid-column-start:3;
+      grid-column-end: -1;
+    }
+
+    
+
+    .black{
+      background-color: #000;
+    } 
+
+    .first-black{
+      grid-column-start: 2;
+      grid-column-end:3;
+      grid-row-start:1;
+      grid-row-end:-1;
+    }
+
+    .second-black{
+      grid-column-start: 1;
+      grid-column-end:-1;
+      grid-row-start:2;
+      grid-row-end:2;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="container">
+    <div class="item red"></div>
+    <div class="item black first-black"></div>
+    <div class="item white first-white"></div>  
+    <div class="item black second-black"></div>
+    <div class="item white second-white"></div>
+    <div class="item white third-white"></div>
+    <div class="item white fourth-white"></div>
+    <div class="item white fifth-white"></div>
+    <div class="item black third-black"></div>
+    <div class="item blue"></div>
+    <div class="item white sixth-white"></div>
+    <div class="item white seventh-white"></div>
+    <div class="item white eighth-white"></div>
+    <div class="item white nineth-white"></div>
+    <div class="item black fourth-black"></div>
+    <div class="item black fifth-black"></div>
+    <div class="item white tenth-white"></div>
+    <div class="item white eleventh-white"></div>
+    <div class="item white 12th-white"></div>
+    <div class="item white 13th-white"></div>
+    <div class="item black 6thth-black"></div>
+    <div class="item white 13th-white"></div>
+    <div class="item black"></div>
+    <div class="item black"></div>
+    <div class="item black"></div>
+    <div class="item black"></div>
+    <div class="item black"></div>
+    <div class="item white"></div>
+    <div class="item white"></div>
+    <div class="item yellow"></div>
+    <div class="item black"></div>
+    <div class="item black-box"></div>
+    <div class="item black"></div>
+    <div class="item white"></div>
+   </div>
+</body>
+
+</html>
