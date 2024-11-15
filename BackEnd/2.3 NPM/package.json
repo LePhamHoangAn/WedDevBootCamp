@@ -1,0 +1,17 @@
+{
+  "name": "learning_npm",
+  "version": "1.0.0",
+  "description": "Yes testing the water heh",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "An Le",
+  "license": "ISC",
+  "dependencies": {
+    "sillyname": "^0.1.0",
+    "superheroes": "^4.0.0",
+    "supervillains": "^4.0.0"
+  }
+}
