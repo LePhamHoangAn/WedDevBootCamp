@@ -11,7 +11,7 @@ app.get("/about",(req, res)=>{
 });
 
 app.get("/contact",(req, res)=>{
-    res.send("<h2>Contact me</h2>")
+    res.send("<h2>Contact me</h2>") 
 });
 
 app.listen(port, ()=>{
