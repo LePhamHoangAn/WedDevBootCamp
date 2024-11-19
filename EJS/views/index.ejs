@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS</title>
+</head>
+<body>
+    <h1>
+        <% const d = new Date(); %>
+        <% let day = d.getDay(); %>
+        <% let dayname =""; %>
+        <% let daytype =""; %>
+
+
+        
+        <% if(day===0) { %>       
+            <% dayname="Sunday"; %>
+        <% } if(day===1){ %>
+            <% dayname="Monday"; %>
+            <% } if(day===2){ %>
+                <% dayname="Tuesday"; %>
+                    <% } if(day===3){ %>
+                        <% dayname="Wednesday"; %>
+                            <% } if(day===4){ %>
+                                <% dayname="Thursday"; %>
+                                    <% } if(day===5){ %>
+                                        <% dayname="Friday"; %>
+                                            <% } if(day===6){ %>
+                                                <% dayname="Saturday"; %>
+                                                    <% } %>
+
+
+        
+
+        <% if(day===0 || day === 6) { %>       
+            <% daytype="weekend, it is time to party!!!"; %>
+        <% } else{ %>
+           <% daytype="weekday, wake up samurai we have a city to burn!"; %>
+            <% } %>
+
+        
+
+        Hey! It's a <%= dayname %> which is a <%= daytype %>
+    </h1>
+</body>
+</html>
